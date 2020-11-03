@@ -2,6 +2,8 @@ const express = require('express');
 
 const server = express();
 
-server.get('/', (request, response) => response.send('Olá Mundo'));
+server.get('/', (request, response) =>
+  response.json({ message: 'Teste Servidor'}),
+);
 
 server.listen(3333);
