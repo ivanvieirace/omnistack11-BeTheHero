@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from './Header';
 import './App.css';
 
 function App() {
-  return <h1>Be The Hero</h1>;
+  return <Header />;
 }
 
 export default App;
