@@ -1,9 +1,9 @@
 import React from 'react';
+import Logon from './pages/Logon';
 import './App.css';
-import Header from './Header';
 
 function App() {
-  return <Header title="Be The Hero" />;
+  return <Logon />;
 }
 
 export default App;
