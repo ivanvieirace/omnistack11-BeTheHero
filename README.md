@@ -13,6 +13,10 @@
   <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1?style=flat-square"><br/>  
 </p>
 
+## :page_facing_up: About
+
+This specific project has the main goal to help NGOs
+
 ## :bug: Issues
 
 Feel free to **file a new issue** with a respective title and description on the the [Be The Hero](https://github.com/ivanvieirace/omnistack11-BeTheHero/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
