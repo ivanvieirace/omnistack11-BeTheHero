@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles.css';
 import '../../global.css';
+import '../Logon/styles.css';
 import { FiLogIn } from 'react-icons/fi';
 import logoImage from '../../assets/logo.svg';
 import heroesImage from '../../assets/heroes.png';
