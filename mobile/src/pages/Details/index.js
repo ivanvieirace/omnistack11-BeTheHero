@@ -24,7 +24,15 @@ export default function Details() {
   }
 
   function sendWhatsapp() {
-    Linking.openURL(`whatsapp://send?phone=5585996969998&text=${message}`);
+    Linking.canOpenURL('whatsapp://send?text=oi').then((supported) => {
+      if (supported) {
+        Linking.openURL(`whatsapp://send?phone=5585996969998&text=${message}`);
+      } else {
+        Linking.openURL(
+          `https://api.whatsapp.com/send?phone=5585996969998&text=${message}`,
+        );
+      }
+    });
   }
   return (
     <View style={styles.container}>
