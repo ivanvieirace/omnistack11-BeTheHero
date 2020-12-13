@@ -24,4 +24,13 @@ module.exports = {
 
     return response.json({ id });
   },
+
+  async update(request, response) {
+    const { id, name, email, whatsapp, city, uf } = request.body;
+
+    await connection('ongs').update({ name }).where({ id });
+    await connection('ongs').update({ email }).where({ id });
+
+    return response.send();
+  },
 };
