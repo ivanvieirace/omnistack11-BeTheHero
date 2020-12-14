@@ -22,18 +22,15 @@ export default function Incidents() {
       return;
     }
 
-    if (totalIncidents > 0 && incidents.length === totalIncidents) {
+    if (totalIncidents > 0 && incidents.length == totalIncidents) {
       return;
     }
 
     setLoading(true);
 
-    const response = await api.get('/incidents', {
-      params: { pagination },
-    });
+    const responsePagination = await api.get(`incidents?page=${pagination}`);
 
-    setIncidents([...incidents, ...response.data]);
-    setTotalIncidents(response.headers['x-total-count']);
+    setIncidents([...incidents, ...responsePagination.data]);
     setPagination(pagination + 1);
     setLoading(false);
   }
